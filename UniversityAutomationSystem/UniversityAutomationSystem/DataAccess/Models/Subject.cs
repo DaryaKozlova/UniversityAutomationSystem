@@ -1,0 +1,12 @@
+﻿using System;
+using UniversityAutomationSystem.DataAccess.Models.Interfaces;
+
+namespace UniversityAutomationSystem.DataAccess.Models
+{
+    public class Subject : IEntity
+    {
+        public Guid Id { get; set; }
+
+        public string Title { get; set; }
+    }
+}
