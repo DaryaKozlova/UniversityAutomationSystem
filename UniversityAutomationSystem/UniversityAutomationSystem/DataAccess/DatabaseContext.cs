@@ -3,7 +3,7 @@ using UniversityAutomationSystem.DataAccess.Models;
 
 namespace UniversityAutomationSystem.DataAccess
 {
-    internal sealed class DatabaseContext : DbContext
+    public sealed class DatabaseContext : DbContext
     {
         public DbSet<Credentials> Credentials { get; set; }
         public DbSet<Teacher> Teacher { get; set; }

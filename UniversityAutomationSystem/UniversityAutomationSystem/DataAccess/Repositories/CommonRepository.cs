@@ -1,39 +1,84 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore;
+using UniversityAutomationSystem.DataAccess.Models.Interfaces;
 using UniversityAutomationSystem.DataAccess.Repositories.Interfaces;
 
 namespace UniversityAutomationSystem.DataAccess.Repositories
 {
-    public class CommonRepository<T> : IRepository<T>
+    public abstract class CommonRepository<T> : IRepository<T> where T : class, IEntity
     {
-        public T Create(T entity)
+        protected readonly DatabaseContext _context;
+        protected DbSet<T> Collection;
+
+        protected abstract IQueryable<T> CollectionWithIncludes { get; }
+
+        protected CommonRepository(DatabaseContext databaseContext)
         {
-            throw new NotImplementedException();
+            _context = databaseContext;
+            Collection = databaseContext.Set<T>();
         }
 
-        public T Update(T entity)
+        public virtual List<T> GetAll(Expression<Func<T, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            return (filter == null ? CollectionWithIncludes.ToList() : CollectionWithIncludes.Where(filter).ToList());
         }
 
-        public bool Delete(T entity)
+        public T Find(Expression<Func<T, bool>> filter)
         {
-            throw new NotImplementedException();
+            return CollectionWithIncludes.FirstOrDefault(filter);
         }
 
-        public T FindById(Guid id)
+        public T First()
         {
-            throw new NotImplementedException();
+            return CollectionWithIncludes.FirstOrDefault();
         }
 
-        public T Find(Func<T, bool> filter)
+        public virtual T FindById(Guid id)
         {
-            throw new NotImplementedException();
+            return CollectionWithIncludes.FirstOrDefault(cart => cart.Id == id);
         }
 
-        public List<T> GetAll(Func<T, bool> filter)
+        public virtual T Create(T item)
         {
-            throw new NotImplementedException();
+            Collection.Add(item);
+
+            var savedAmount = _context.SaveChanges();
+
+            if (savedAmount > 0)
+            {
+                return item;
+            }
+
+            return null;
+        }
+
+        public virtual bool Delete(Guid id)
+        {
+            var entity = Collection.FirstOrDefault(e => e.Id == id);
+
+            if (entity == null)
+            {
+                return false;
+            }
+
+            Collection.Remove(entity);
+
+            var isAnyUpdated = _context.SaveChanges() > 0;
+
+            return isAnyUpdated;
+
+        }
+
+        public virtual bool Update(T item)
+        {
+            Collection.Update(item);
+
+            var isAnyUpdated = _context.SaveChanges() > 0;
+
+            return isAnyUpdated;
         }
     }
 }
