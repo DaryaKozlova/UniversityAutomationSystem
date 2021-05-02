@@ -34,5 +34,12 @@ namespace UniversityAutomationSystem.Forms
             FormCreateStudent createStudentForm = new FormCreateStudent();
             createStudentForm.ShowDialog();
         }
+
+        private void buttonAddAcademicPerformance_Click(object sender, EventArgs e)
+        {
+
+            Academic_Performance AcademicPerformanceForm = new Academic_Performance();
+            AcademicPerformanceForm.ShowDialog();
+        }
     }
 }

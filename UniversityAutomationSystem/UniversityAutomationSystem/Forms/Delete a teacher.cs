@@ -24,9 +24,9 @@ namespace UniversityAutomationSystem.Forms
 
             InitializeComponent();
 
-            comboBox1.ValueMember = "Value";
-            comboBox1.DisplayMember = "Text";
-            comboBox1.DataSource = items;
+            comboBoxEmail.ValueMember = "Value";
+            comboBoxEmail.DisplayMember = "Text";
+            comboBoxEmail.DataSource = items;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,13 +50,16 @@ namespace UniversityAutomationSystem.Forms
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            var selectedValue = (Guid)comboBox1.SelectedValue;
+            var selectedValue = (Guid)comboBoxEmail.SelectedValue;
             var teacher = _teacherRepository.FindById(selectedValue);
 
             _selectedTeacher = teacher;
 
-            textBox1.Text = _selectedTeacher.Name;
-            textBox2.Text = _selectedTeacher.Credentials.Email;
+            textBoxName.Text = _selectedTeacher.Name;
+            //textBoxEmail.Text = _selectedTeacher.Credentials.Email;
+            textBoxEmail.Text = _selectedTeacher.FacultyDepartment.Title;
+            maskedTextBoxHireDate.Text = _selectedTeacher.HireDateTime.ToString();
+            maskedTextBoxFireDate.Text = DateTime.Now.Date.ToString();
         }
     }
 }

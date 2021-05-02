@@ -60,7 +60,7 @@ namespace UniversityAutomationSystem.Forms
                 {
                     Id = Guid.NewGuid(),
                     Email = textBoxStudentName.Text,
-                    Password = null,
+                    Password = textBoxPassword.Text,
                     UpdateDateTime = DateTimeOffset.Now
                 },
                 Group = selectedGroup,
@@ -89,6 +89,11 @@ namespace UniversityAutomationSystem.Forms
         private void FormCreateStudent_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonCancelStudent_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -79,14 +79,14 @@ namespace UniversityAutomationSystem.Forms
             var teacher = new Teacher
             {
                 Id = Guid.NewGuid(),
-                Name = textBox2.Text,
+                Name = textBoxName.Text,
                 DateOfBirth = DateTime.Parse(DOBmaskedTextBox.Text),
                 Credentials = new Credentials
                 {
 
                     Id = Guid.NewGuid(),
-                    Email = textBox1.Text,
-                    Password = null,
+                    Email = textBoxEmail.Text,
+                    Password = textBoxPassword.Text,
                     UpdateDateTime = DateTimeOffset.Now
                 },
                 FacultyDepartment = selectedFaculty, 

@@ -2,7 +2,7 @@
 
 namespace UniversityAutomationSystem.DataAccess.Models.Interfaces
 {
-    public interface IAssessmentType : IRepository<AssessmentType>
+    public interface IAssessmentTypeRepository : IRepository<AssessmentType>
     {
         
     }

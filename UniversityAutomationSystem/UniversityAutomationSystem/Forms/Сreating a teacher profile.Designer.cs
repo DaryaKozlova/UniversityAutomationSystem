@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.buttonAddTeacher = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelTeacherEmail = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelTeacherName = new System.Windows.Forms.Label();
             this.labelDOB = new System.Windows.Forms.Label();
             this.DOBmaskedTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -40,6 +40,8 @@
             this.buttonCancelTeacher = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.labelPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonAddTeacher
@@ -56,14 +58,14 @@
             this.buttonAddTeacher.UseVisualStyleBackColor = false;
             this.buttonAddTeacher.Click += new System.EventHandler(this.buttonAddTeacher_Click);
             // 
-            // textBox1
+            // textBoxEmail
             // 
-            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(342, 33);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 36);
-            this.textBox1.TabIndex = 1;
+            this.textBoxEmail.Font = new System.Drawing.Font("MS Reference Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxEmail.Location = new System.Drawing.Point(342, 33);
+            this.textBoxEmail.Multiline = true;
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(220, 36);
+            this.textBoxEmail.TabIndex = 1;
             // 
             // labelTeacherEmail
             // 
@@ -76,14 +78,14 @@
             this.labelTeacherEmail.Text = "Email";
             this.labelTeacherEmail.Click += new System.EventHandler(this.labelTeacherEmail_Click);
             // 
-            // textBox2
+            // textBoxName
             // 
-            this.textBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(12, 33);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 36);
-            this.textBox2.TabIndex = 1;
+            this.textBoxName.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxName.Location = new System.Drawing.Point(12, 33);
+            this.textBoxName.Multiline = true;
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(220, 36);
+            this.textBoxName.TabIndex = 1;
             // 
             // labelTeacherName
             // 
@@ -151,7 +153,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(342, 97);
+            this.label1.Location = new System.Drawing.Point(345, 163);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 19);
             this.label1.TabIndex = 2;
@@ -160,11 +162,31 @@
             // maskedTextBox1
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.Location = new System.Drawing.Point(426, 97);
+            this.maskedTextBox1.Location = new System.Drawing.Point(429, 163);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(106, 36);
+            this.maskedTextBox1.Size = new System.Drawing.Size(101, 36);
             this.maskedTextBox1.TabIndex = 3;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPassword.Location = new System.Drawing.Point(342, 98);
+            this.textBoxPassword.Multiline = true;
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
+            this.textBoxPassword.Size = new System.Drawing.Size(220, 36);
+            this.textBoxPassword.TabIndex = 5;
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPassword.Location = new System.Drawing.Point(353, 88);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(81, 19);
+            this.labelPassword.TabIndex = 2;
+            this.labelPassword.Text = "Password";
             // 
             // createTeacherForm
             // 
@@ -172,6 +194,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 361);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancelTeacher);
@@ -180,9 +204,9 @@
             this.Controls.Add(this.DOBmaskedTextBox);
             this.Controls.Add(this.labelDOB);
             this.Controls.Add(this.labelTeacherName);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelTeacherEmail);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.buttonAddTeacher);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "createTeacherForm";
@@ -198,9 +222,9 @@
 
         private System.Windows.Forms.Button button;
         private System.Windows.Forms.Button buttonAddTeacher;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label labelTeacherEmail;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelTeacherName;
         private System.Windows.Forms.Label labelDOB;
         private System.Windows.Forms.MaskedTextBox DOBmaskedTextBox;
@@ -209,5 +233,7 @@
         private System.Windows.Forms.Button buttonCancelTeacher;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Label labelPassword;
     }
 }

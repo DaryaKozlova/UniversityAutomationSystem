@@ -42,6 +42,8 @@
             this.EnteringDatemaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.GraduationDateLabel = new System.Windows.Forms.Label();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.label4Password = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonCancelStudent
@@ -56,6 +58,7 @@
             this.buttonCancelStudent.TabIndex = 0;
             this.buttonCancelStudent.Text = "Cancel";
             this.buttonCancelStudent.UseVisualStyleBackColor = false;
+            this.buttonCancelStudent.Click += new System.EventHandler(this.buttonCancelStudent_Click);
             // 
             // buttonAddStudent
             // 
@@ -187,12 +190,34 @@
             this.GraduationDateLabel.Text = "Gtaduation Date";
             this.GraduationDateLabel.Click += new System.EventHandler(this.label4_Click);
             // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPassword.Location = new System.Drawing.Point(338, 102);
+            this.textBoxPassword.Multiline = true;
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
+            this.textBoxPassword.Size = new System.Drawing.Size(220, 36);
+            this.textBoxPassword.TabIndex = 5;
+            // 
+            // label4Password
+            // 
+            this.label4Password.AutoSize = true;
+            this.label4Password.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4Password.Location = new System.Drawing.Point(349, 92);
+            this.label4Password.Name = "label4Password";
+            this.label4Password.Size = new System.Drawing.Size(81, 19);
+            this.label4Password.TabIndex = 2;
+            this.label4Password.Text = "Password";
+            // 
             // FormCreateStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 363);
+            this.Controls.Add(this.label4Password);
+            this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.GraduationDateLabel);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.EnteringDatemaskedTextBox);
@@ -232,5 +257,7 @@
         private System.Windows.Forms.MaskedTextBox EnteringDatemaskedTextBox;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label GraduationDateLabel;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Label label4Password;
     }
 }

@@ -32,17 +32,17 @@ namespace UniversityAutomationSystem
 
             services.AddScoped<IAdministratorRepository, AdministratorRepository>();
             services.AddScoped<IAcademicPerformanceRepository, AcademicPerformanceRepository>();
-            //services.AddScoped<IRepository<AssessmentType>, IRepository<AssessmentType>>();
+            services.AddScoped<IAssessmentTypeRepository, AssessmentTypeRepository>();
             //services.AddScoped<IRepository<Credentials>, IRepository<Credentials>>();
             //services.AddScoped<IRepository<DeansOfficeWorker>, IRepository<DeansOfficeWorker>>();
             services.AddScoped<IFacultyDepartmentRepository, FacultyDepartmentRepository>();
             //services.AddScoped<IRepository<FacultyDepartment>, IRepository<FacultyDepartment>>();
             services.AddScoped<IGroupRepository, GroupRepository>();
             //services.AddScoped<IRepository<Language>, IRepository<Language>>();
-            //services.AddScoped<IRepository<PassingHistory>, IRepository<PassingHistory>>();
+            services.AddScoped<IPassingHistoryRepository, PassingHistoryRepository>();
             //services.AddScoped<IRepository<Specialty>, IRepository<Specialty>>();
             services.AddScoped<IStudentRepository, StudentRepository>();
-            //services.AddScoped<IRepository<Subject>, IRepository<Subject>>();
+            services.AddScoped<ISubjectRepository, SubjectRepository>();
             //services.AddScoped<IRepository<SubjectTeacher>, IRepository<SubjectTeacher>>();
             services.AddScoped<ITeacherRepository, TeacherRepository>();
             //services.AddScoped<IRepository<TeacherType>, IRepository<TeacherType>>();
