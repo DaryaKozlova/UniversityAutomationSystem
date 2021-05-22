@@ -64,7 +64,6 @@ namespace UniversityAutomationSystem.Forms
                     UpdateDateTime = DateTimeOffset.Now
                 },
                 Group = selectedGroup,
-                SecondName = null, //sel
                 LastName = null,
                 EnteringDate = DateTime.Parse(EnteringDatemaskedTextBox.Text),
                 GraduationDate = null
@@ -94,6 +93,11 @@ namespace UniversityAutomationSystem.Forms
         private void buttonCancelStudent_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void DOBmaskedTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

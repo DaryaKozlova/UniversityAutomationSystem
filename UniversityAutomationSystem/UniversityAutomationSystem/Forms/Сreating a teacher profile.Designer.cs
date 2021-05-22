@@ -210,6 +210,7 @@
             this.Controls.Add(this.buttonAddTeacher);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "createTeacherForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create a teacher profile";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.createTeacherForm_FormClosed);
             this.Load += new System.EventHandler(this.createTeacherForm_Load);

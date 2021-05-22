@@ -15,6 +15,7 @@ namespace UniversityAutomationSystem.Forms
         {
             SignInForm signInForm = new SignInForm();
             signInForm.ShowDialog();
+            this.Close();
         }
 
         private void buttonCreateTeacher_Click(object sender, EventArgs e)

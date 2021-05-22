@@ -79,7 +79,8 @@ namespace UniversityAutomationSystem.Forms
             var teacher = new Teacher
             {
                 Id = Guid.NewGuid(),
-                Name = textBoxName.Text,
+                FirstName = textBoxName.Text,
+                LastName = null,
                 DateOfBirth = DateTime.Parse(DOBmaskedTextBox.Text),
                 Credentials = new Credentials
                 {
@@ -89,8 +90,8 @@ namespace UniversityAutomationSystem.Forms
                     Password = textBoxPassword.Text,
                     UpdateDateTime = DateTimeOffset.Now
                 },
-                FacultyDepartment = selectedFaculty, 
-                TeacherType = null, //sel
+                FacultyDepartment = selectedFaculty,
+                //TeacherType = null, //sel
                 HireDateTime = DateTime.Parse(maskedTextBox1.Text),
                 FireDateTime = null
             };

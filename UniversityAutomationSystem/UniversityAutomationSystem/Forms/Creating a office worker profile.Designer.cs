@@ -225,6 +225,7 @@
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Creating_a_office_worker_profile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creating a office worker profile";
             this.Load += new System.EventHandler(this.Creating_a_office_worker_profile_Load);
             this.ResumeLayout(false);

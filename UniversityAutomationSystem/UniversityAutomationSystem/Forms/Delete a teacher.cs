@@ -55,11 +55,16 @@ namespace UniversityAutomationSystem.Forms
 
             _selectedTeacher = teacher;
 
-            textBoxName.Text = _selectedTeacher.Name;
-            //textBoxEmail.Text = _selectedTeacher.Credentials.Email;
+            textBoxName.Text = _selectedTeacher.FirstName;
+            textBoxLastName.Text =_selectedTeacher.LastName;
             textBoxEmail.Text = _selectedTeacher.FacultyDepartment.Title;
             maskedTextBoxHireDate.Text = _selectedTeacher.HireDateTime.ToString();
             maskedTextBoxFireDate.Text = DateTime.Now.Date.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

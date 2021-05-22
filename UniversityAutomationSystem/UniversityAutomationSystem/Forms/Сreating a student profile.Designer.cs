@@ -111,6 +111,7 @@
             this.DOBmaskedTextBox.Name = "DOBmaskedTextBox";
             this.DOBmaskedTextBox.Size = new System.Drawing.Size(106, 36);
             this.DOBmaskedTextBox.TabIndex = 3;
+            this.DOBmaskedTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.DOBmaskedTextBox_MaskInputRejected);
             // 
             // comboBoxGroup
             // 
@@ -235,6 +236,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormCreateStudent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create a student profile";
             this.Load += new System.EventHandler(this.FormCreateStudent_Load);
             this.ResumeLayout(false);

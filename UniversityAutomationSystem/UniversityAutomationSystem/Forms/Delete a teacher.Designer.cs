@@ -39,6 +39,8 @@
             this.labelFireDate = new System.Windows.Forms.Label();
             this.maskedTextBoxFireDate = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBoxEmail
@@ -56,9 +58,10 @@
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(141, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 19);
+            this.label1.Size = new System.Drawing.Size(90, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Name";
+            this.label1.Text = "First Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxName
             // 
@@ -128,7 +131,7 @@
             // 
             this.labelFireDate.AutoSize = true;
             this.labelFireDate.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelFireDate.Location = new System.Drawing.Point(132, 180);
+            this.labelFireDate.Location = new System.Drawing.Point(132, 240);
             this.labelFireDate.Name = "labelFireDate";
             this.labelFireDate.Size = new System.Drawing.Size(76, 19);
             this.labelFireDate.TabIndex = 2;
@@ -137,7 +140,7 @@
             // maskedTextBoxFireDate
             // 
             this.maskedTextBoxFireDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBoxFireDate.Location = new System.Drawing.Point(216, 180);
+            this.maskedTextBoxFireDate.Location = new System.Drawing.Point(216, 240);
             this.maskedTextBoxFireDate.Mask = "00/00/0000";
             this.maskedTextBoxFireDate.Name = "maskedTextBoxFireDate";
             this.maskedTextBoxFireDate.Size = new System.Drawing.Size(136, 36);
@@ -153,11 +156,34 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Search by Email";
             // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Enabled = false;
+            this.textBoxLastName.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxLastName.Location = new System.Drawing.Point(132, 180);
+            this.textBoxLastName.Multiline = true;
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.ReadOnly = true;
+            this.textBoxLastName.Size = new System.Drawing.Size(220, 36);
+            this.textBoxLastName.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(141, 169);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 19);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Last Name";
+            // 
             // Delete_a_teacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.maskedTextBoxFireDate);
             this.Controls.Add(this.labelFireDate);
@@ -171,6 +197,7 @@
             this.Controls.Add(this.comboBoxEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Delete_a_teacher";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete a teacher";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,5 +217,7 @@
         private System.Windows.Forms.Label labelFireDate;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxFireDate;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxLastName;
+        private System.Windows.Forms.Label label4;
     }
 }

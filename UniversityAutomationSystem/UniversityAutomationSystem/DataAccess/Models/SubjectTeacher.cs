@@ -11,7 +11,7 @@ namespace UniversityAutomationSystem.DataAccess.Models
 
         public Subject Subject { get; set; }
 
-        public TeacherType TeacherType { get; set; }
+        //public TeacherType TeacherType { get; set; }
 
         public int Semester { get; set; }
 

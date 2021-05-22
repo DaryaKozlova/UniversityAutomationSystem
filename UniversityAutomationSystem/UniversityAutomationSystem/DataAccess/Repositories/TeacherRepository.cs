@@ -13,7 +13,8 @@ namespace UniversityAutomationSystem.DataAccess.Repositories
 
         protected override IQueryable<Teacher> CollectionWithIncludes => Collection
             .Include(e => e.Credentials)
-            .Include(e => e.FacultyDepartment)
-            .Include(e => e.TeacherType);
+            .Include(e => e.FacultyDepartment);
+
+        //.Include(e => e.TeacherType);
     }
 }

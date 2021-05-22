@@ -7,15 +7,15 @@ namespace UniversityAutomationSystem.DataAccess.Models
     {
         public Guid Id { get; set; }
 
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
 
         public DateTime DateOfBirth { get; set; }
 
         public Credentials Credentials { get; set; }
 
         public FacultyDepartment FacultyDepartment { get; set; }
-
-        public TeacherType TeacherType { get; set; }
 
         public DateTime HireDateTime { get; set; }
 
