@@ -44,6 +44,8 @@
             this.GraduationDateLabel = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label4Password = new System.Windows.Forms.Label();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonCancelStudent
@@ -89,15 +91,15 @@
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(21, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 19);
+            this.label1.Size = new System.Drawing.Size(90, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Name";
+            this.label1.Text = "First Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 102);
+            this.label2.Location = new System.Drawing.Point(12, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 19);
             this.label2.TabIndex = 2;
@@ -106,7 +108,7 @@
             // DOBmaskedTextBox
             // 
             this.DOBmaskedTextBox.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DOBmaskedTextBox.Location = new System.Drawing.Point(126, 102);
+            this.DOBmaskedTextBox.Location = new System.Drawing.Point(126, 152);
             this.DOBmaskedTextBox.Mask = "00/00/0000";
             this.DOBmaskedTextBox.Name = "DOBmaskedTextBox";
             this.DOBmaskedTextBox.Size = new System.Drawing.Size(106, 36);
@@ -117,7 +119,7 @@
             // 
             this.comboBoxGroup.Font = new System.Drawing.Font("MS Reference Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxGroup.FormattingEnabled = true;
-            this.comboBoxGroup.Location = new System.Drawing.Point(12, 164);
+            this.comboBoxGroup.Location = new System.Drawing.Point(12, 214);
             this.comboBoxGroup.Name = "comboBoxGroup";
             this.comboBoxGroup.Size = new System.Drawing.Size(220, 36);
             this.comboBoxGroup.TabIndex = 4;
@@ -126,7 +128,7 @@
             // 
             this.labelGroup.AutoSize = true;
             this.labelGroup.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelGroup.Location = new System.Drawing.Point(22, 152);
+            this.labelGroup.Location = new System.Drawing.Point(22, 202);
             this.labelGroup.Name = "labelGroup";
             this.labelGroup.Size = new System.Drawing.Size(55, 19);
             this.labelGroup.TabIndex = 2;
@@ -211,12 +213,33 @@
             this.label4Password.TabIndex = 2;
             this.label4Password.Text = "Password";
             // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxLastName.Location = new System.Drawing.Point(12, 102);
+            this.textBoxLastName.Multiline = true;
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(220, 36);
+            this.textBoxLastName.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(21, 92);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 19);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Last Name";
+            // 
             // FormCreateStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 363);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.label4Password);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.GraduationDateLabel);
@@ -261,5 +284,7 @@
         private System.Windows.Forms.Label GraduationDateLabel;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label label4Password;
+        private System.Windows.Forms.TextBox textBoxLastName;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -37,7 +37,6 @@
             this.deleteOfficeWorker = new System.Windows.Forms.Button();
             this.operationState = new System.Windows.Forms.Label();
             this.buttonAddAcademicPerformance = new System.Windows.Forms.Button();
-            this.buttonCreateReport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCreateTeacher
@@ -128,9 +127,8 @@
             this.operationState.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.operationState.Location = new System.Drawing.Point(13, 289);
             this.operationState.Name = "operationState";
-            this.operationState.Size = new System.Drawing.Size(283, 22);
+            this.operationState.Size = new System.Drawing.Size(0, 22);
             this.operationState.TabIndex = 4;
-            this.operationState.Text = "Text about successful operation";
             // 
             // buttonAddAcademicPerformance
             // 
@@ -144,25 +142,12 @@
             this.buttonAddAcademicPerformance.UseVisualStyleBackColor = false;
             this.buttonAddAcademicPerformance.Click += new System.EventHandler(this.buttonAddAcademicPerformance_Click);
             // 
-            // buttonCreateReport
-            // 
-            this.buttonCreateReport.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.buttonCreateReport.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonCreateReport.Location = new System.Drawing.Point(303, 222);
-            this.buttonCreateReport.Name = "buttonCreateReport";
-            this.buttonCreateReport.Size = new System.Drawing.Size(83, 40);
-            this.buttonCreateReport.TabIndex = 2;
-            this.buttonCreateReport.Text = "Report";
-            this.buttonCreateReport.UseVisualStyleBackColor = false;
-            this.buttonCreateReport.Click += new System.EventHandler(this.deleteTeacher_Click);
-            // 
             // formAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(681, 331);
-            this.Controls.Add(this.buttonCreateReport);
             this.Controls.Add(this.buttonAddAcademicPerformance);
             this.Controls.Add(this.operationState);
             this.Controls.Add(this.deleteOfficeWorker);
@@ -193,6 +178,5 @@
         private System.Windows.Forms.Button deleteOfficeWorker;
         private System.Windows.Forms.Label operationState;
         private System.Windows.Forms.Button buttonAddAcademicPerformance;
-        private System.Windows.Forms.Button buttonCreateReport;
     }
 }

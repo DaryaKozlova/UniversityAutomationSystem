@@ -64,7 +64,7 @@ namespace UniversityAutomationSystem.Forms
                     UpdateDateTime = DateTimeOffset.Now
                 },
                 Group = selectedGroup,
-                LastName = null,
+                LastName = textBoxLastName.Text,
                 EnteringDate = DateTime.Parse(EnteringDatemaskedTextBox.Text),
                 GraduationDate = null
             };

@@ -42,6 +42,8 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonAddTeacher
@@ -93,15 +95,15 @@
             this.labelTeacherName.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelTeacherName.Location = new System.Drawing.Point(21, 22);
             this.labelTeacherName.Name = "labelTeacherName";
-            this.labelTeacherName.Size = new System.Drawing.Size(53, 19);
+            this.labelTeacherName.Size = new System.Drawing.Size(90, 19);
             this.labelTeacherName.TabIndex = 2;
-            this.labelTeacherName.Text = "Name";
+            this.labelTeacherName.Text = "First Name";
             // 
             // labelDOB
             // 
             this.labelDOB.AutoSize = true;
             this.labelDOB.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDOB.Location = new System.Drawing.Point(12, 97);
+            this.labelDOB.Location = new System.Drawing.Point(12, 147);
             this.labelDOB.Name = "labelDOB";
             this.labelDOB.Size = new System.Drawing.Size(105, 19);
             this.labelDOB.TabIndex = 2;
@@ -110,7 +112,7 @@
             // DOBmaskedTextBox
             // 
             this.DOBmaskedTextBox.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DOBmaskedTextBox.Location = new System.Drawing.Point(126, 97);
+            this.DOBmaskedTextBox.Location = new System.Drawing.Point(126, 147);
             this.DOBmaskedTextBox.Mask = "00/00/0000";
             this.DOBmaskedTextBox.Name = "DOBmaskedTextBox";
             this.DOBmaskedTextBox.Size = new System.Drawing.Size(106, 36);
@@ -118,18 +120,18 @@
             // 
             // comboBoxDepartment
             // 
-            this.comboBoxDepartment.Font = new System.Drawing.Font("MS Reference Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxDepartment.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxDepartment.FormattingEnabled = true;
-            this.comboBoxDepartment.Location = new System.Drawing.Point(12, 164);
+            this.comboBoxDepartment.Location = new System.Drawing.Point(12, 214);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
-            this.comboBoxDepartment.Size = new System.Drawing.Size(220, 36);
+            this.comboBoxDepartment.Size = new System.Drawing.Size(220, 30);
             this.comboBoxDepartment.TabIndex = 4;
             // 
             // labelDepartment
             // 
             this.labelDepartment.AutoSize = true;
             this.labelDepartment.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDepartment.Location = new System.Drawing.Point(22, 152);
+            this.labelDepartment.Location = new System.Drawing.Point(22, 202);
             this.labelDepartment.Name = "labelDepartment";
             this.labelDepartment.Size = new System.Drawing.Size(98, 19);
             this.labelDepartment.TabIndex = 2;
@@ -188,12 +190,33 @@
             this.labelPassword.TabIndex = 2;
             this.labelPassword.Text = "Password";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(12, 98);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(220, 36);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(21, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Last Name";
+            // 
             // createTeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 361);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.maskedTextBox1);
@@ -236,5 +259,7 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

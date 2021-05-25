@@ -45,10 +45,11 @@
             // 
             // comboBoxEmail
             // 
+            this.comboBoxEmail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxEmail.FormattingEnabled = true;
             this.comboBoxEmail.Location = new System.Drawing.Point(276, 42);
             this.comboBoxEmail.Name = "comboBoxEmail";
-            this.comboBoxEmail.Size = new System.Drawing.Size(245, 28);
+            this.comboBoxEmail.Size = new System.Drawing.Size(245, 30);
             this.comboBoxEmail.TabIndex = 0;
             this.comboBoxEmail.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
@@ -87,12 +88,12 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Enabled = false;
-            this.textBoxEmail.Font = new System.Drawing.Font("MS Reference Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxEmail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxEmail.Location = new System.Drawing.Point(462, 115);
             this.textBoxEmail.Multiline = true;
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.ReadOnly = true;
-            this.textBoxEmail.Size = new System.Drawing.Size(220, 36);
+            this.textBoxEmail.Size = new System.Drawing.Size(326, 36);
             this.textBoxEmail.TabIndex = 1;
             // 
             // buttonFireATeacher
@@ -119,12 +120,12 @@
             // maskedTextBoxHireDate
             // 
             this.maskedTextBoxHireDate.Enabled = false;
-            this.maskedTextBoxHireDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBoxHireDate.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.maskedTextBoxHireDate.Location = new System.Drawing.Point(547, 180);
             this.maskedTextBoxHireDate.Mask = "00/00/0000";
             this.maskedTextBoxHireDate.Name = "maskedTextBoxHireDate";
             this.maskedTextBoxHireDate.ReadOnly = true;
-            this.maskedTextBoxHireDate.Size = new System.Drawing.Size(135, 36);
+            this.maskedTextBoxHireDate.Size = new System.Drawing.Size(135, 28);
             this.maskedTextBoxHireDate.TabIndex = 3;
             // 
             // labelFireDate
@@ -139,11 +140,11 @@
             // 
             // maskedTextBoxFireDate
             // 
-            this.maskedTextBoxFireDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBoxFireDate.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.maskedTextBoxFireDate.Location = new System.Drawing.Point(216, 240);
             this.maskedTextBoxFireDate.Mask = "00/00/0000";
             this.maskedTextBoxFireDate.Name = "maskedTextBoxFireDate";
-            this.maskedTextBoxFireDate.Size = new System.Drawing.Size(136, 36);
+            this.maskedTextBoxFireDate.Size = new System.Drawing.Size(136, 28);
             this.maskedTextBoxFireDate.TabIndex = 3;
             // 
             // label3
