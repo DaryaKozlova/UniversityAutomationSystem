@@ -35,6 +35,7 @@ namespace UniversityAutomationSystem
             }
 
             Forms.formAdmin formAdmin = new Forms.formAdmin(admin);
+            this.Hide();
             formAdmin.ShowDialog();
         }
 

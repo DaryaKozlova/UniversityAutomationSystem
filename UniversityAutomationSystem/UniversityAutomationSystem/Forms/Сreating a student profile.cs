@@ -55,7 +55,8 @@ namespace UniversityAutomationSystem.Forms
             {
                 Id = Guid.NewGuid(),
                 FirstName = textBoxStudentName.Text,
-                DateOfBirth = DateTime.Parse(DOBmaskedTextBox.Text),
+               // DateOfBirth = DateTime.Parse(DOBmaskedTextBox.Text),
+                DateOfBirth = DateTime.Parse(dateTimePickerDOB.Text),
                 Credentials = new Credentials
                 {
                     Id = Guid.NewGuid(),
@@ -65,7 +66,7 @@ namespace UniversityAutomationSystem.Forms
                 },
                 Group = selectedGroup,
                 LastName = textBoxLastName.Text,
-                EnteringDate = DateTime.Parse(EnteringDatemaskedTextBox.Text),
+                EnteringDate = DateTime.Parse(dateTimePickerEnteringDate.Text),
                 GraduationDate = null
             };
 

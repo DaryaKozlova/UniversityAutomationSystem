@@ -34,16 +34,16 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelTeacherName = new System.Windows.Forms.Label();
             this.labelDOB = new System.Windows.Forms.Label();
-            this.DOBmaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
             this.labelDepartment = new System.Windows.Forms.Label();
             this.buttonCancelTeacher = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePickerHireDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDOB = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // buttonAddTeacher
@@ -103,26 +103,17 @@
             // 
             this.labelDOB.AutoSize = true;
             this.labelDOB.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDOB.Location = new System.Drawing.Point(12, 147);
+            this.labelDOB.Location = new System.Drawing.Point(21, 211);
             this.labelDOB.Name = "labelDOB";
             this.labelDOB.Size = new System.Drawing.Size(105, 19);
             this.labelDOB.TabIndex = 2;
             this.labelDOB.Text = "Date Of Birth";
             // 
-            // DOBmaskedTextBox
-            // 
-            this.DOBmaskedTextBox.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DOBmaskedTextBox.Location = new System.Drawing.Point(126, 147);
-            this.DOBmaskedTextBox.Mask = "00/00/0000";
-            this.DOBmaskedTextBox.Name = "DOBmaskedTextBox";
-            this.DOBmaskedTextBox.Size = new System.Drawing.Size(106, 36);
-            this.DOBmaskedTextBox.TabIndex = 3;
-            // 
             // comboBoxDepartment
             // 
             this.comboBoxDepartment.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxDepartment.FormattingEnabled = true;
-            this.comboBoxDepartment.Location = new System.Drawing.Point(12, 214);
+            this.comboBoxDepartment.Location = new System.Drawing.Point(12, 163);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
             this.comboBoxDepartment.Size = new System.Drawing.Size(220, 30);
             this.comboBoxDepartment.TabIndex = 4;
@@ -131,7 +122,7 @@
             // 
             this.labelDepartment.AutoSize = true;
             this.labelDepartment.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDepartment.Location = new System.Drawing.Point(22, 202);
+            this.labelDepartment.Location = new System.Drawing.Point(21, 154);
             this.labelDepartment.Name = "labelDepartment";
             this.labelDepartment.Size = new System.Drawing.Size(98, 19);
             this.labelDepartment.TabIndex = 2;
@@ -155,20 +146,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(345, 163);
+            this.label1.Location = new System.Drawing.Point(353, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Hire Date";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.Location = new System.Drawing.Point(429, 163);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(101, 36);
-            this.maskedTextBox1.TabIndex = 3;
             // 
             // textBoxPassword
             // 
@@ -209,22 +191,36 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Last Name";
             // 
+            // dateTimePickerHireDate
+            // 
+            this.dateTimePickerHireDate.Location = new System.Drawing.Point(293, 176);
+            this.dateTimePickerHireDate.Name = "dateTimePickerHireDate";
+            this.dateTimePickerHireDate.Size = new System.Drawing.Size(269, 27);
+            this.dateTimePickerHireDate.TabIndex = 6;
+            // 
+            // dateTimePickerDOB
+            // 
+            this.dateTimePickerDOB.Location = new System.Drawing.Point(12, 233);
+            this.dateTimePickerDOB.Name = "dateTimePickerDOB";
+            this.dateTimePickerDOB.Size = new System.Drawing.Size(269, 27);
+            this.dateTimePickerDOB.TabIndex = 6;
+            // 
             // createTeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 361);
+            this.Controls.Add(this.dateTimePickerDOB);
+            this.Controls.Add(this.dateTimePickerHireDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxPassword);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancelTeacher);
             this.Controls.Add(this.labelDepartment);
             this.Controls.Add(this.comboBoxDepartment);
-            this.Controls.Add(this.DOBmaskedTextBox);
             this.Controls.Add(this.labelDOB);
             this.Controls.Add(this.labelTeacherName);
             this.Controls.Add(this.textBoxName);
@@ -251,7 +247,6 @@
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelTeacherName;
         private System.Windows.Forms.Label labelDOB;
-        private System.Windows.Forms.MaskedTextBox DOBmaskedTextBox;
         private System.Windows.Forms.ComboBox comboBoxDepartment;
         private System.Windows.Forms.Label labelDepartment;
         private System.Windows.Forms.Button buttonCancelTeacher;
@@ -261,5 +256,7 @@
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerHireDate;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDOB;
     }
 }

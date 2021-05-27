@@ -74,13 +74,6 @@ namespace UniversityAutomationSystem.Forms
             assesmentTypeSelect.DataSource = dataSource;
         }
 
-        private void subjectSelect_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-        }
-
-        private void groupSelect_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-        }
 
         private void TryReloadStudents()
         {
@@ -177,20 +170,9 @@ namespace UniversityAutomationSystem.Forms
 
             this.Close();
         }
-
-        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             TryReloadStudents();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonCreateReport_Click(object sender, EventArgs e)

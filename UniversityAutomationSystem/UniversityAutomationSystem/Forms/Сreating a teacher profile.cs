@@ -81,7 +81,7 @@ namespace UniversityAutomationSystem.Forms
                 Id = Guid.NewGuid(),
                 FirstName = textBoxName.Text,
                 LastName = null,
-                DateOfBirth = DateTime.Parse(DOBmaskedTextBox.Text),
+                DateOfBirth = DateTime.Parse(dateTimePickerDOB.Text),
                 Credentials = new Credentials
                 {
 

@@ -53,7 +53,6 @@
             this.groupSelect.Name = "groupSelect";
             this.groupSelect.Size = new System.Drawing.Size(305, 28);
             this.groupSelect.TabIndex = 0;
-            this.groupSelect.SelectionChangeCommitted += new System.EventHandler(this.groupSelect_SelectionChangeCommitted);
             // 
             // label1
             // 
@@ -72,7 +71,6 @@
             this.subjectSelect.Name = "subjectSelect";
             this.subjectSelect.Size = new System.Drawing.Size(302, 28);
             this.subjectSelect.TabIndex = 0;
-            this.subjectSelect.SelectionChangeCommitted += new System.EventHandler(this.subjectSelect_SelectionChangeCommitted);
             // 
             // label2
             // 
@@ -83,7 +81,6 @@
             this.label2.Size = new System.Drawing.Size(113, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Select subject";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // assesmentTypeSelect
             // 
@@ -183,7 +180,6 @@
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(307, 27);
             this.dateTimePicker.TabIndex = 6;
-            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // button1
             // 
