@@ -37,6 +37,8 @@ namespace UniversityAutomationSystem.Forms
 
             InitializeComponent();
 
+            buttonCreateReport.Enabled = false;
+
             var groups = _groupRepository.GetAll();
 
             var items = groups.Select(@group => new
@@ -144,6 +146,8 @@ namespace UniversityAutomationSystem.Forms
                 var assessmentType = _assessmentTypeRepository.FindById((Guid) assesmentTypeSelect.SelectedValue);
                 var student = _studentRepository.FindById((Guid) row.Cells[0].Value);
 
+                buttonCreateReport.Enabled = true;
+
                 var academicPerformance = new AcademicPerformance
                 {
                     Id = Guid.NewGuid(),
@@ -168,7 +172,7 @@ namespace UniversityAutomationSystem.Forms
                 _passingHistoryRepository.Create(passingHistory);
             }
 
-            this.Close();
+            //this.Close();
         }
         private void button1_Click(object sender, EventArgs e)
         {

@@ -92,7 +92,7 @@ namespace UniversityAutomationSystem.Forms
                 },
                 FacultyDepartment = selectedFaculty,
                 //TeacherType = null, //sel
-                HireDateTime = DateTime.Parse(maskedTextBox1.Text),
+                HireDateTime = DateTime.Parse(dateTimePickerHireDate.Text),
                 FireDateTime = null
             };
 
